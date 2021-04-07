@@ -10,6 +10,7 @@
     let Math=+prompt('Your math score: ')
     let Biology=+prompt('Your biology score:')
     s=Physics+Math+Biology
+    if(Physics>=0 && Math>=0 && Biology>=0){
     TB=(Physics + Math + Biology) /3
     document.write('Phycis score: '+ Physics)
     document.write('<br/>')
@@ -19,7 +20,9 @@
     document.write('<br/>')
     document.write('Sum of your score: '+ s)
     document.write('<br/>')
-    document.write('Average of your score: '+TB)
+    document.write('Average of your score: '+TB)}
+    else
+        document.write('Bạn phải nhập số dương ! Xin vui lòng nhập lại')
 </script>
 </body>
 </html>
